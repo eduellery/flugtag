@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.5.0" build="20967" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="net/rim/blackberry/events/PushServiceErrorEvent" mod="1338913463936" signatureChecksum="482271478" >
+        <def id="net.rim.blackberry.events:PushServiceErrorEvent" /> 
+        <dep id="flash.events:Event" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:ErrorEvent" type="i" /> 
+      </script>
+      <script name="net/rim/blackberry/push/InitializationError" mod="1335877042538" signatureChecksum="1862216456" >
+        <def id="net.rim.blackberry.push:InitializationError" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Error" type="i" /> 
+      </script>
+      <script name="_9a211d4242f991de900f517d1157dcbddef5f02d85682a99607f4b8c8c0b0062_flash_display_Sprite" mod="1341950250899" signatureChecksum="112359891" >
+        <def id="_9a211d4242f991de900f517d1157dcbddef5f02d85682a99607f4b8c8c0b0062_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="net/rim/blackberry/push/PushService" mod="1338222801348" signatureChecksum="1909150036" >
+        <def id="net.rim.blackberry.push:PushService" /> 
+        <dep id="flash.errors:IllegalOperationError" type="e" /> 
+        <dep id="net.rim.blackberry.events:CreateChannelSuccessEvent" type="e" /> 
+        <dep id="ArgumentError" type="e" /> 
+        <dep id="flash.utils:ByteArray" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="net.rim.blackberry.events:PushServiceEvent" type="e" /> 
+        <dep id="net.rim.blackberry.push:InitializationError" type="e" /> 
+        <dep id="net.rim.blackberry.push:PushPayload" type="e" /> 
+        <dep id="qnx.invoke:InvokeAction" type="e" /> 
+        <dep id="net.rim.blackberry.events:CreateChannelSuccessEvent" type="s" /> 
+        <dep id="flash.utils:ByteArray" type="s" /> 
+        <dep id="qnx.invoke:InvokeRequest" type="s" /> 
+        <dep id="net.rim.blackberry.push:PushPayload" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="net/rim/blackberry/events/PushServiceEvent" mod="1333046016521" signatureChecksum="3043595325" >
+        <def id="net.rim.blackberry.events:PushServiceEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="net/rim/blackberry/events/CreateChannelSuccessEvent" mod="1338222801348" signatureChecksum="1779002438" >
+        <def id="net.rim.blackberry.events:CreateChannelSuccessEvent" /> 
+        <dep id="flash.events:Event" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="net.rim.blackberry.events:PushServiceEvent" type="i" /> 
+      </script>
+      <script name="net/rim/blackberry/push/PushPayload" mod="1338222801348" signatureChecksum="3090116019" >
+        <def id="net.rim.blackberry.push:PushPayload" /> 
+        <dep id="flash.utils:ByteArray" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="bd22fc24d0ebcab6285a4369904417818e541e0d393868a1728d57035a8f0d7a"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

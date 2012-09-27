@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="qnx/system/DeviceBatteryState" mod="1321288418010" signatureChecksum="207502495" >
+        <def id="qnx.system:DeviceBatteryState" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/locale/Locale" mod="1333048963002" signatureChecksum="3783147192" >
+        <def id="qnx.locale:Locale" /> 
+        <dep id="flash.globalization:CurrencyFormatter" type="e" /> 
+        <dep id="flash.events:Event" type="e" /> 
+        <dep id="flash.globalization:DateTimeStyle" type="e" /> 
+        <dep id="flash.globalization:NumberFormatter" type="e" /> 
+        <dep id="flash.events:IOErrorEvent" type="e" /> 
+        <dep id="flash.filesystem:File" type="e" /> 
+        <dep id="flash.globalization:DateTimeFormatter" type="e" /> 
+        <dep id="qnx.locale:LocaleDateTime" type="e" /> 
+        <dep id="qnx.locale:LocaleManager" type="e" /> 
+        <dep id="qnx.locale:LocaleResourceBundle" type="e" /> 
+        <dep id="flash.globalization:CurrencyFormatter" type="s" /> 
+        <dep id="flash.events:Event" type="s" /> 
+        <dep id="flash.globalization:DateTimeStyle" type="s" /> 
+        <dep id="Date" type="s" /> 
+        <dep id="flash.globalization:NumberFormatter" type="s" /> 
+        <dep id="flash.events:IOErrorEvent" type="s" /> 
+        <dep id="flash.filesystem:File" type="s" /> 
+        <dep id="flash.globalization:DateTimeFormatter" type="s" /> 
+        <dep id="qnx.locale:LocaleResourceBundle" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="qnx/notification/NotificationManager" mod="1338818845549" signatureChecksum="2216736305" >
+        <def id="qnx.notification:NotificationManager" /> 
+        <dep id="qnx.notification:Notification" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/dialog/BaseDialog" mod="1321558606705" signatureChecksum="4239827736" >
+        <def id="qnx.dialog:BaseDialog" /> 
+        <dep id="flash.events:Event" type="e" /> 
+        <dep id="qnx.dialog:DialogInterface" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="qnx/dialog/LoginDialog" mod="1328552940036" signatureChecksum="604160922" >
+        <def id="qnx.dialog:LoginDialog" /> 
+        <dep id="qnx.dialog:DialogSize" type="e" /> 
+        <dep id="qnx.dialog:DialogAlign" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="qnx.dialog:BaseDialog" type="i" /> 
+      </script>
+      <script name="qnx/invoke/InvokeTargetType" mod="1336141125930" signatureChecksum="1838823311" >
+        <def id="qnx.invoke:InvokeTargetType" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/invoke/InvokeManager" mod="1338818845549" signatureChecksum="4283928547" >
+        <def id="qnx.invoke:InvokeManager" /> 
+        <dep id="qnx.display:Viewer" type="e" /> 
+        <dep id="qnx.events:InvokeEvent" type="e" /> 
+        <dep id="flash.events:ErrorEvent" type="e" /> 
+        <dep id="qnx.display:Viewer" type="s" /> 
+        <dep id="qnx.invoke:InvokeRequest" type="s" /> 
+        <dep id="qnx.invoke:InvokeQueryTargetsRequest" type="s" /> 
+        <dep id="qnx.invoke:InvokeViewerRequest" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/events/VirtualKeyboardEvent" mod="1325712811770" signatureChecksum="856583983" >
+        <def id="qnx.events:VirtualKeyboardEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="qnx/dialog/AlertDialog" mod="1321288418010" signatureChecksum="1103509197" >
+        <def id="qnx.dialog:AlertDialog" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="qnx.dialog:BaseDialog" type="i" /> 
+      </script>
+      <script name="qnx/dialog/PopupList" mod="1321288418010" signatureChecksum="3414206906" >
+        <def id="qnx.dialog:PopupList" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="qnx.dialog:BaseDialog" type="i" /> 
+      </script>
+      <script name="qnx/events/DeviceBatteryEvent" mod="1321288418010" signatureChecksum="1625256277" >
+        <def id="qnx.events:DeviceBatteryEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="qnx/events/InvokeEvent" mod="1337347884040" signatureChecksum="2023252268" >
+        <def id="qnx.events:InvokeEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="qnx/events/NotificationEvent" mod="1336662533472" signatureChecksum="1003577753" >
+        <def id="qnx.events:NotificationEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="qnx/invoke/InvokeTarget" mod="1336141125930" signatureChecksum="4013374223" >
+        <def id="qnx.invoke:InvokeTarget" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/display/Viewer" mod="1338564240667" signatureChecksum="101655156" >
+        <def id="qnx.display:Viewer" /> 
+        <dep id="qnx.system:NavControl" type="e" /> 
+        <dep id="qnx.events:ViewerEvent" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="qnx.pps:Message" type="s" /> 
+        <dep id="qnx.invoke:InvokeViewerRequest" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="qnx/dialog/PromptDialog" mod="1321289961570" signatureChecksum="3189726959" >
+        <def id="qnx.dialog:PromptDialog" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="qnx.dialog:BaseDialog" type="i" /> 
+      </script>
+      <script name="qnx/locale/LocaleResourceBundle" mod="1325882084496" signatureChecksum="2677599041" >
+        <def id="qnx.locale:LocaleResourceBundle" /> 
+        <dep id="flash.events:Event" type="e" /> 
+        <dep id="flash.net:URLRequest" type="e" /> 
+        <dep id="flash.filesystem:FileStream" type="e" /> 
+        <dep id="flash.events:IOErrorEvent" type="e" /> 
+        <dep id="flash.net:URLLoader" type="e" /> 
+        <dep id="flash.filesystem:FileMode" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="flash.events:Event" type="s" /> 
+        <dep id="flash.filesystem:FileStream" type="s" /> 
+        <dep id="flash.events:IOErrorEvent" type="s" /> 
+        <dep id="flash.net:URLLoader" type="s" /> 
+        <dep id="flash.filesystem:File" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="qnx/dialog/DialogButtonProperty" mod="1321288418010" signatureChecksum="809327365" >
+        <def id="qnx.dialog:DialogButtonProperty" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/dialog/DialogSize" mod="1321288418010" signatureChecksum="4234505550" >
+        <def id="qnx.dialog:DialogSize" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/dialog/PasswordChangeDialog" mod="1321289961570" signatureChecksum="2416053012" >
+        <def id="qnx.dialog:PasswordChangeDialog" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="qnx.dialog:BaseDialog" type="i" /> 
+      </script>
+      <script name="qnx/dialog/DialogPosition" mod="1321288418010" signatureChecksum="2635875333" >
+        <def id="qnx.dialog:DialogPosition" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/invoke/InvokeStartupMode" mod="1336141125930" signatureChecksum="1275737076" >
+        <def id="qnx.invoke:InvokeStartupMode" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/notification/Notification" mod="1336662533472" signatureChecksum="3108664748" >
+        <def id="qnx.notification:Notification" /> 
+        <dep id="qnx.invoke:InvokeRequest" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/events/QNXApplicationEvent" mod="1337114555703" signatureChecksum="1596756070" >
+        <def id="qnx.events:QNXApplicationEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="qnx/events/ViewerEvent" mod="1338564240667" signatureChecksum="1211730255" >
+        <def id="qnx.events:ViewerEvent" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="qnx/locale/LocaleManager" mod="1333048963002" signatureChecksum="2430624157" >
+        <def id="qnx.locale:LocaleManager" /> 
+        <dep id="flash.events:Event" type="e" /> 
+        <dep id="flash.events:IEventDispatcher" type="e" /> 
+        <dep id="__AS3__.vec:Vector" type="e" /> 
+        <dep id="qnx.locale:Locale" type="e" /> 
+        <dep id="qnx.locale:ILocaleResourceLoader" type="e" /> 
+        <dep id="flash.events:IOErrorEvent" type="e" /> 
+        <dep id="flash.utils:Dictionary" type="e" /> 
+        <dep id="flash.events:Event" type="s" /> 
+        <dep id="flash.events:IEventDispatcher" type="s" /> 
+        <dep id="flash.globalization:DateTimeStyle" type="s" /> 
+        <dep id="Date" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="qnx.locale:Locale" type="s" /> 
+        <dep id="qnx.locale:ILocaleResourceLoader" type="s" /> 
+        <dep id="flash.utils:Dictionary" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="_48ec1b12ae2832163df3f6ab8b3da69b637169f33097f2c7da1a3d59512d6381_flash_display_Sprite" mod="1341950425129" signatureChecksum="450394571" >
+        <def id="_48ec1b12ae2832163df3f6ab8b3da69b637169f33097f2c7da1a3d59512d6381_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="qnx/invoke/InvokeActionType" mod="1336141125930" signatureChecksum="1116416781" >
+        <def id="qnx.invoke:InvokeActionType" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/invoke/InvokeViewerRequest" mod="1336141125930" signatureChecksum="3037817513" >
+        <def id="qnx.invoke:InvokeViewerRequest" /> 
+        <dep id="flash.utils:ByteArray" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/dialog/DialogAlign" mod="1321288418010" signatureChecksum="118504163" >
+        <def id="qnx.dialog:DialogAlign" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/events/InvokeQueryTargetsEvent" mod="1336141125930" signatureChecksum="1747415400" >
+        <def id="qnx.events:InvokeQueryTargetsEvent" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="qnx.invoke:InvokeAction" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="qnx/invoke/InvokeRequest" mod="1336141125930" signatureChecksum="1863929309" >
+        <def id="qnx.invoke:InvokeRequest" /> 
+        <dep id="flash.utils:ByteArray" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/invoke/InvokeQueryTargetsRequest" mod="1336141125930" signatureChecksum="2996861003" >
+        <def id="qnx.invoke:InvokeQueryTargetsRequest" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/system/NavControl" mod="1337347884040" signatureChecksum="1371637967" >
+        <def id="qnx.system:NavControl" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/locale/LocaleDateTime" mod="1327589686449" signatureChecksum="4152046055" >
+        <def id="qnx.locale:LocaleDateTime" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/locale/ILocaleResourceLoader" mod="1325882084496" signatureChecksum="508637402" >
+        <def id="qnx.locale:ILocaleResourceLoader" /> 
+        <dep id="flash.events:IEventDispatcher" type="s" /> 
+        <dep id="qnx.locale:Locale" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/system/VirtualKeyboard" mod="1333048963002" signatureChecksum="4031039930" >
+        <def id="qnx.system:VirtualKeyboard" /> 
+        <dep id="qnx.events:VirtualKeyboardEvent" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="qnx/invoke/InvokeAction" mod="1336582542140" signatureChecksum="3231542317" >
+        <def id="qnx.invoke:InvokeAction" /> 
+        <dep id="qnx.invoke:InvokeTarget" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/system/Device" mod="1334600324598" signatureChecksum="1322591075" >
+        <def id="qnx.system:Device" /> 
+        <dep id="qnx.system:DeviceBatteryState" type="e" /> 
+        <dep id="flash.system:Capabilities" type="e" /> 
+        <dep id="qnx.events:DeviceBatteryEvent" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="qnx/dialog/DialogInterface" mod="1333048963002" signatureChecksum="390971713" >
+        <def id="qnx.dialog:DialogInterface" /> 
+        <dep id="flash.utils:getQualifiedClassName" type="e" /> 
+        <dep id="qnx.events:DialogInterfaceEvent" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="RegExp" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="qnx/events/DialogInterfaceEvent" mod="1321288688190" signatureChecksum="646033722" >
+        <def id="qnx.events:DialogInterfaceEvent" /> 
+        <dep id="qnx.pps:Message" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:Event" type="i" /> 
+      </script>
+      <script name="qnx/system/QNXApplication" mod="1337114555703" signatureChecksum="1387854202" >
+        <def id="qnx.system:QNXApplication" /> 
+        <dep id="qnx.events:QNXApplicationEvent" type="e" /> 
+        <dep id="qnx.system:NavControl" type="e" /> 
+        <dep id="qnx.system:NavControl" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="14b100a0c6a154eaf7ad73576813eab309727d565901d366639a7df5adf611ce"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>
