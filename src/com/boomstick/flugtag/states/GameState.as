@@ -1,17 +1,14 @@
 package com.boomstick.flugtag.states {
+	import com.boomstick.flugtag.props.OceanBackdrop;
+	import com.boomstick.flugtag.props.InteractiveProps;
+	import com.boomstick.flugtag.utils.VisualAssets;
 	import com.boomstick.flugtag.utils.InputHandler;
 	import com.boomstick.flugtag.utils.Constantes;
 	import flash.desktop.NativeApplication;
 	import org.flixel.FlxPoint;
 	import org.flixel.FlxText;
 	import org.flixel.FlxObject;
-	import com.boomstick.flugtag.props.Gaivotas;
-	import com.boomstick.flugtag.props.Baloes;
-	import com.boomstick.flugtag.props.Rochas;
-	import com.boomstick.flugtag.props.Lanchas;
-	import com.boomstick.flugtag.props.Clouds;
 	import com.boomstick.flugtag.props.GaugeLauncher;
-	import com.boomstick.flugtag.props.FlxBackdrop;
 	import org.flixel.FlxSprite;
 	import org.flixel.FlxG;
 	import org.flixel.FlxState;
@@ -21,20 +18,10 @@ package com.boomstick.flugtag.states {
 	 * @author Oscar
 	 */
 	public class GameState extends FlxState {
-		
-		[Embed(source = "plat.jpg")] 
-		private var platJPG:Class;
-		
-		[Embed(source = "mascotinho.png")] 
-		private var mascote:Class;
-		
-		[Embed(source = "placar.jpg")] 
-		private var placPNG:Class;
-		
 		/**
 		 * Oceano (sprite loopável)
 		 */
-		private var oceano:FlxBackdrop;
+		private var oceano:OceanBackdrop;
 		/**
 		 * Jogador aviao
 		 */
@@ -46,27 +33,27 @@ package com.boomstick.flugtag.states {
 		/**
 		 * Nuvens (back)
 		 */
-		private var cloudsB : Clouds;
+		private var cloudsB : InteractiveProps;
 		/**
 		 * Nuvens (frente)
 		 */
-		private var cloudsF : Clouds;
+		private var cloudsF : InteractiveProps;
 		/**
 		 * Lanchas
 		 */
-		private var lanchas : Lanchas;
+		private var lanchas : InteractiveProps;
 		/**
 		 * Rochas
 		 */
-		private var rochas : Rochas;
+		private var rochas : InteractiveProps;
 		/**
 		 * Baloes
 		 */
-		private var baloes : Baloes;
+		private var baloes : InteractiveProps;
 		/**
 		 * Gaivotas
 		 */
-		private var gaivotas : Gaivotas;
+		private var gaivotas : InteractiveProps;
 		 
 		/**
 		 * Barra de lançamento
@@ -139,25 +126,27 @@ package com.boomstick.flugtag.states {
 			
 			// Plataforma
 			plataforma = new FlxSprite();
-			plataforma.loadGraphic(platJPG);
+			plataforma.loadGraphic(VisualAssets.PLATAFORMA);
 			plataforma.x = 0;
 			plataforma.y = FlxG.height - plataforma.height;
 			
 			// Oceano
-			oceano = new FlxBackdrop();
+			oceano = new OceanBackdrop();
 			
 			// Jogador
 			player = new FlxSprite();
-			player.loadGraphic(mascote);
+			player.loadGraphic(VisualAssets.MASCOTE);
 			player.x = plataforma.width - player.width;
 			player.y = plataforma.y - player.height;
 			
-			cloudsB = new Clouds(2);
-			cloudsF = new Clouds(1);
-			lanchas = new Lanchas(1);
-			gaivotas = new Gaivotas(1);
-			rochas = new Rochas(1);
-			baloes = new Baloes(2);
+			cloudsB = new InteractiveProps([VisualAssets.NUVEM1, VisualAssets.NUVEM2, VisualAssets.NUVEM3], 
+			false, 2, 2000, 0, -20, false);
+			cloudsF = new InteractiveProps([VisualAssets.NUVEM1, VisualAssets.NUVEM2, VisualAssets.NUVEM3], 
+			false, 1, 2000, 0, -20, false);
+			lanchas = new InteractiveProps([VisualAssets.LANCHA], true, 1, 2000, 46);
+			gaivotas = new InteractiveProps([VisualAssets.GAIVOTA], false, 1);
+			rochas = new InteractiveProps([VisualAssets.ROCHA], true, 1, 2000, 50);
+			baloes = new InteractiveProps([VisualAssets.BALAO1, VisualAssets.BALAO2], false, 2, 4000);
 			
 			// Resetar pontuação
 			FlxG.score = 0;
@@ -298,7 +287,7 @@ package com.boomstick.flugtag.states {
 				}
 				case 3: {
 					placar = new FlxSprite();
-					placar.loadGraphic(placPNG);
+					placar.loadGraphic(VisualAssets.PLACAR);
 					placar.x = (FlxG.width - placar.width)/2;
 					placar.y = (FlxG.height - placar.height)/2;
 					

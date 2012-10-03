@@ -1,4 +1,5 @@
 package com.boomstick.flugtag.props {
+	import com.boomstick.flugtag.utils.VisualAssets;
 	import org.flixel.FlxG;
 	import org.flixel.FlxSprite;
 
@@ -7,12 +8,6 @@ package com.boomstick.flugtag.props {
 	 * @author Oscar
 	 */
 	public class GaugeLauncher extends FlxSprite {
-		
-		[Embed(source = "gauge.jpg")] 
-		private var barra:Class;
-		
-		[Embed(source = "can.png")] 
-		private var can:Class;
 		
 		public var redCan:FlxSprite;
 		
@@ -23,14 +18,12 @@ package com.boomstick.flugtag.props {
 		public function GaugeLauncher() {
 			this.border = 16;
 			
-			this.loadGraphic(barra);
-			this.width = 1000;
-			this.height = 55;
+			this.loadGraphic(VisualAssets.BARRA);
 			this.x = FlxG.width/2 - this.width/2;
 			this.y = FlxG.height - ( 64 + border); 
 			
 			redCan = new FlxSprite();
-			redCan.loadGraphic(can);
+			redCan.loadGraphic(VisualAssets.LATA);
 			redCan.width = 128;
 			redCan.height = 128;
 			redCan.x = this.x + border;
