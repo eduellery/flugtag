@@ -13,11 +13,9 @@ package com.boomstick.flugtag.props {
 		
 		public function Oceano(mult:int) {
 			super();
-			this.width = 128;
-			this.height = 116;
+			this.loadGraphic(wavetJPG);
 			this.x = 0 + this.width*mult;
 			this.y = FlxG.height - this.height;
-			this.loadGraphic(wavetJPG);
 		}
 	}
 }

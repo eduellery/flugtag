@@ -1,6 +1,6 @@
 package com.boomstick.flugtag.states {
+	import com.boomstick.flugtag.utils.Constantes;
 	import flash.desktop.NativeApplication;
-	import flash.system.fscommand;
 	import org.flixel.FlxPoint;
 	import org.flixel.FlxText;
 	import org.flixel.FlxObject;
@@ -9,7 +9,6 @@ package com.boomstick.flugtag.states {
 	import com.boomstick.flugtag.props.Rochas;
 	import com.boomstick.flugtag.props.Lanchas;
 	import com.boomstick.flugtag.props.Clouds;
-	import com.boomstick.flugtag.Constantes;
 	import com.boomstick.flugtag.props.GaugeLauncher;
 	import com.boomstick.flugtag.props.FlxBackdrop;
 	import org.flixel.FlxSprite;
@@ -134,20 +133,18 @@ package com.boomstick.flugtag.states {
 			
 			// Plataforma
 			plataforma = new FlxSprite();
-			plataforma.x = 0;
-			plataforma.y = FlxG.height - 400;
 			plataforma.loadGraphic(platJPG);
+			plataforma.x = 0;
+			plataforma.y = FlxG.height - plataforma.height;
 			
 			// Oceano
 			oceano = new FlxBackdrop();
 			
 			// Jogador
 			player = new FlxSprite();
-			player.width = 99;
-			player.height = 70;
-			player.x = plataforma.width - player.width - 10;
-			player.y = plataforma.y - player.height;
 			player.loadGraphic(mascote);
+			player.x = plataforma.width - player.width;
+			player.y = plataforma.y - player.height;
 			
 			cloudsB = new Clouds(2);
 			cloudsF = new Clouds(1);
