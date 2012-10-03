@@ -1,4 +1,5 @@
 package com.boomstick.flugtag.states {
+	import com.boomstick.flugtag.utils.InputHandler;
 	import com.boomstick.flugtag.utils.Constantes;
 	import flash.desktop.NativeApplication;
 	import org.flixel.FlxPoint;
@@ -121,6 +122,11 @@ package com.boomstick.flugtag.states {
 		 */
 		private var score:FlxText;
 		
+		/**
+		 * Placar com resultado final do jogo
+		 */
+		private var placar:FlxSprite;
+		
 		public function GameState() {
 			speed = 0;
 			state = 0;
@@ -167,6 +173,7 @@ package com.boomstick.flugtag.states {
 			gauge = new GaugeLauncher();
 			
 			// Pontuação
+			// TODO melhorar
 			score = new FlxText(FlxG.width - 150, 0, 100);
 			score.scale = new FlxPoint(2, 2);
 			score.shadow = 0xff000000;
@@ -193,7 +200,7 @@ package com.boomstick.flugtag.states {
 			switch(state) {
 				case 0: {
 					// Esperando toque para iniciar
-					if (FlxG.mouse.pressed()) {
+					if (InputHandler.touching()) {
 						
 						add(gauge);
 						add(gauge.redCan);
@@ -205,7 +212,7 @@ package com.boomstick.flugtag.states {
 				}
 				case 1: {
 					// Espera soltar a barra
-					if (!FlxG.mouse.pressed()) {
+					if (!InputHandler.touching()) {
 						
 						speed = -gauge.getSpeed();
 						updateStuffSpeed();
@@ -253,10 +260,10 @@ package com.boomstick.flugtag.states {
 					player.angle = (180 - Math.atan2(player.velocity.y, speed) * 180 / Math.PI) % 360;
 					
 					// Calcular momento
-					if (!loser && FlxG.mouse.pressed() && Math.abs(FlxG.mouse.y - lastY) > Constantes.MOM_TRESHOLD) {
+					if (!loser && InputHandler.touching() && Math.abs(InputHandler.getY() - lastY) > Constantes.MOM_TRESHOLD) {
 						var oldMomentum:int = momentum;
 						
-						momentum = FlxG.mouse.y - lastY;
+						momentum = InputHandler.getY() - lastY;
 						
 						if (momentum > Constantes.MAX_VARIATION) {
 							momentum = Constantes.MAX_VARIATION;
@@ -290,7 +297,7 @@ package com.boomstick.flugtag.states {
 					break;
 				}
 				case 3: {
-					var placar:FlxSprite = new FlxSprite();
+					placar = new FlxSprite();
 					placar.loadGraphic(placPNG);
 					placar.x = (FlxG.width - placar.width)/2;
 					placar.y = (FlxG.height - placar.height)/2;
@@ -317,11 +324,12 @@ package com.boomstick.flugtag.states {
 				}
 				case 4: {
 					// Esperando escolher opção do menu
-					if (FlxG.mouse.pressed()) {
+					if (InputHandler.touched()) {
 						
-						var xI:int = FlxG.mouse.x - (FlxG.width - 600)/2;
-						var yI:int = FlxG.mouse.y - (FlxG.height - 400)/2;
-											
+						var xI:int = InputHandler.getX() - (FlxG.width - placar.width)/2;
+						var yI:int = InputHandler.getY() - (FlxG.height - placar.height)/2;
+						
+						// TODO criar classe botão para evitar essas medidas	
 						if (yI >= 295 && yI <= 385) {
 							// Retry
 							if (xI >= 15 && xI <= 210) {
